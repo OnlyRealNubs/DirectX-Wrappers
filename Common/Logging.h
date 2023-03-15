@@ -34,7 +34,7 @@ static std::ostream& operator<<(std::ostream& os, const wchar_t* wchr)
 	return os << std::string(ws.begin(), ws.end()).c_str();
 }
 
-static void logf(char * fmt, ...)
+static void Logf(char * fmt, ...)
 {
 	va_list ap;
 	va_start(ap, fmt);
@@ -45,7 +45,7 @@ static void logf(char * fmt, ...)
 	va_end(ap);
 }
 
-static void logf(wchar_t * fmt, ...)
+static void Logf(wchar_t * fmt, ...)
 {
 	va_list ap;
 	va_start(ap, fmt);
